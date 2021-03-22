@@ -39,6 +39,10 @@ final class Item
 		$this->status = $result['status'];
 	}
 
+	/**
+	* Соединение с БД
+	* @return object
+	*/
 	private function connectDB()
 	{
 		$db = ['host' => 'localhost', 'name' => 'test', 'charset' => 'UTF-8'];
@@ -72,6 +76,10 @@ final class Item
 		}
 	}
 
+	/**
+	* Сохранение в БД
+	* @return bool
+	*/
 	public function save()
 	{
 		if ($this->changed)

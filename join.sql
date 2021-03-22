@@ -1,0 +1,1 @@
+SELECT t1.* from users t1 INNER JOIN objects t2 ON t1.object_id = t2.id
